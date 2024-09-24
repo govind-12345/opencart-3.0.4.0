@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Browser Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test on Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testcases.browsertest">
+        <methods>
+          <include name="test" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testcases.browsertest -->
+    </classes>
+  </test> <!-- Test on Chrome(failed) -->
+</suite> <!-- Failed suite [Browser Test Suite] -->
