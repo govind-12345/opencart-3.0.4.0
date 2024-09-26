@@ -57,7 +57,11 @@ public class MasterBaseClass {
             } else if (os.equalsIgnoreCase("mac")) {
                 capabilities.setPlatform(Platform.MAC);
                 logger.info(os + " Operating system selected");
-            } else {
+            }
+            else if (os.equalsIgnoreCase("linux")) {
+                capabilities.setPlatform(Platform.LINUX);
+                logger.info(os + " Operating system selected");
+            }else {
                 logger.error("Invalid Operating system specified: " + os);
                 throw new Exception("No Matching operating System");
             }

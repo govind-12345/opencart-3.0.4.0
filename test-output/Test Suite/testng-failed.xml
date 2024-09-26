@@ -4,9 +4,9 @@
   <listeners>
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="3" name="FirefoxTest(failed)">
-    <parameter name="os" value="Windows"/>
-    <parameter name="browser" value="firefox"/>
+  <test thread-count="3" name="ChromeTest(failed)">
+    <parameter name="os" value="linux"/>
+    <parameter name="browser" value="chrome"/>
     <groups>
       <run>
         <include name="Sanity"/>
@@ -21,5 +21,5 @@
         </methods>
       </class> <!-- testcases.TC002_LoginTest -->
     </classes>
-  </test> <!-- FirefoxTest(failed) -->
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Test Suite] -->
